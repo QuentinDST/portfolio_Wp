@@ -1,5 +1,169 @@
-<?php get_header()?>
+<?php get_header() ?>
 
-    ici index
 
-<?php get_footer()?>
+      <div class="row d-flex flex-column card--project">
+        <div class="col-md-3 card--project1">
+          <div class="card--image">
+            <a href="https://flowershenry.netlify.app" target="_blank"><img src="http://localhost/Brief7/wordpress/wp-content/uploads/2023/02/flowers.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-md-3 card--project2">
+          <div class="card--image">
+            <a href="https://vintedimmitation.netlify.app" target="_blank"><img src="http://localhost/Brief7/wordpress/wp-content/uploads/2023/02/vinted.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-md-3 card--project3">
+          <div class="card--image">
+            <a href="https://confiturecocotte.netlify.app" target="_blank"><img src="http://localhost/Brief7/wordpress/wp-content/uploads/2023/02/confiture.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="row section--skill">
+        <div class="chevron1"></div>
+        <div class="chevron2"></div>
+        <div class="col-sm-12  col-md-12 text-center col-lg-2 tools">
+          <div>
+            <h2 class="skill--title">Front-end</h2>
+          </div>
+          <div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>RESPONSIVE</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-12 text-center col-md-12  col-lg-2 tools">
+          <div>
+            <h2 class="skill--title">Tools</h2>
+          </div>
+          <div>
+            <ul>
+              <li>GITHUB</li>
+              <li>BOOTSRAP</li>
+              <li>FIGMA</li>
+              <li>VSCODE</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="-sm-12 text-center col-md-12 col-lg-2 tools">
+          <div>
+            <h2 class="skill--title">Back-end</h2>
+          </div>
+          <div>
+            <ul>
+              <li>PHP</li>
+              <li>BASE DE DONNEE</li>
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chevron3"></div>
+        <div class="chevron4"></div>
+      </div>
+    </section>
+
+
+    <section class="container d-flex justify-content-center">
+      <div class="col-sm-12 col-md-10 col-lg-4 text-center section--follow">
+        <ul class="follow--message">
+          <a href="#name">
+            <li>C</li>
+            <li>O</li>
+            <li>N</li>
+            <li>T</li>
+            <li>A</li>
+            <li>C</li>
+            <li>T</li>
+            <li>E</li>
+            <li>Z</li>
+            <li>-</li>
+            <li>M</li>
+            <li>O</li>
+            <li>I</li>
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+
+    <footer id="formation--contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 formation">
+          <div class="formation--title">
+            <h2><span class="first-letter">F</span>ORMATION</h2>
+          </div>
+
+          <div class="col-sm-12 col-md-10 col-lg-12 formation--content">
+            <ul class="formation--content--text">
+              <li><i class="bi bi-calendar-check"></i><span class="content--text">TITRE Professionnel de niveau
+                  5<br>DEVELOPPEUR WEB ET WEB MOBILE</li></span>
+              <li><i class="bi bi-map"></i><span class="content--text">GRETA Mende (48)</span></li>
+              <li><i class="bi bi-calendar-check"></i><span class="content--text">2022 / 2023</span></li>
+            </ul>
+          </div>
+
+            <div class="col-sm-12 col-md-10 col-lg-9 formation--text">
+              <p>Développer ou faire évoluer des applications orientées web, ou web mobile</p>
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 col-md-6 contact">
+            <h2><span id="contact" class="first-letter">C</span>ONTACT</h2>
+            <form action="mail.php" method="post">
+              <div class="name--email">
+                <div class="col-sm-12 col-md-6 name">
+                  <label for="name">NOM</label>
+                  <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="col-sm-12 col-md-6 email">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" class="form-control" id="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="text-area">MESSAGE</label>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+              </div>
+              <div class="col-md-12 contact--button">
+                <button class="btn btn-warning btn-lg btn-block " type="submit">ENVOYER</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row copyright align-items-center">
+          <div class="col-sm-12 col-md-6 text-center social--icons">
+            <a href="https://www.linkedin.com/in/quentin-destrade-283aa5257/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/QuentinDST" target="_blank"><i class="bi bi-github social--icon"></i></a>
+          </div>
+          <div class="col-sm-12 col-md-6 copyright--text">
+            <div class="col-sm-12 text-left "><span class="copyright--icon">©</span>Quentin Destrade | 2022</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <!-- END MAIN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+
+<?php get_footer() ?>
