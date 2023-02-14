@@ -22,11 +22,16 @@
           <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav items">
+          <?php wp_nav_menu([
+            'theme_location' => 'header',
+            'container' => false,
+            'menu_class' => 'navbar-nav items',
+            ])?>
+          <!-- <div class="navbar-nav items">
             <a class="nav-link" aria-current="page" href="#">PORTFOLIO</a>
             <a class="nav-link" href="#">FORMATION</a>
             <a class="nav-link" href="#contact">CONTACT</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </nav>

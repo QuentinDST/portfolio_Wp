@@ -33,7 +33,7 @@ header{
     background-image: url(../../uploads/2023/02/keyboard-xl.jpg);
     width: 100vw;
     height: 850px;
-    background-size: cover;
+    background-size:auto;
     max-width: 100%;
 }
 
