@@ -124,7 +124,7 @@ function get_backend_skills(){
 
 // Création Cpt Portfolio
 
-function portfolio_projet_register_post_types() {
+function projet_register_post_types() {
 	$labels = array(
         'name' => 'Projet',
         'all_items' => 'Tous les projets',
@@ -149,4 +149,4 @@ function portfolio_projet_register_post_types() {
 
 	register_post_type( 'projet', $args );
 }
-add_action( 'init', 'portfolio_projet_register_post_types' );
+add_action( 'init', 'projet_register_post_types' );

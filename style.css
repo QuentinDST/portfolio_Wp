@@ -29,11 +29,18 @@ body{font-family: var(--body-font);
 /* Header */
 
 
-header{
+.class--front--page .header{
     background-image: url(../../uploads/2023/02/keyboard-xl.jpg);
     width: 100vw;
     height: 850px;
     background-size:auto;
+    max-width: 100%;
+}
+
+.class--other--page .header {
+    background-color: #131313;
+    width: 100vw;
+    height: 150px;
     max-width: 100%;
 }
 
