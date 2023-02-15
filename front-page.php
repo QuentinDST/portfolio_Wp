@@ -112,27 +112,11 @@
 
           </div>
 
+            <!-- test form -->
+
           <div class="col-sm-12 col-md-6 contact">
             <h2><span id="contact" class="first-letter">C</span>ONTACT</h2>
-            <form action="mail.php" method="post">
-              <div class="name--email">
-                <div class="col-sm-12 col-md-6 name">
-                  <label for="name">NOM</label>
-                  <input type="text" name="name" class="form-control" id="name">
-                </div>
-                <div class="col-sm-12 col-md-6 email">
-                  <label for="email">EMAIL</label>
-                  <input type="email" name="email" class="form-control" id="email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="text-area">MESSAGE</label>
-                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-              </div>
-              <div class="col-md-12 contact--button">
-                <button class="btn btn-warning btn-lg btn-block " type="submit">ENVOYER</button>
-              </div>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="80" title="Formulaire contact portfolio Destrade Q"]'); ?>
           </div>
         </div>
       </div>

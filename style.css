@@ -319,16 +319,16 @@ body{font-family: var(--body-font);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 14px 40px, rgba(0, 0, 0, 0.22) 0px 10px 40px;
     cursor: pointer;
-    padding: 20px;
+    padding: 15px;
 }
 
 .section--follow li{
     font-family: 'anton';
-    font-size: 55px;
+    font-size: 30px;
     display: inline;
     margin: auto;
     margin-bottom: 0;
-    letter-spacing: 15px;
+    letter-spacing: 25px;
     animation: flash 2s linear infinite;
 }
 
@@ -559,18 +559,17 @@ body{font-family: var(--body-font);
 
 .copyright{
     width: 100vw;
-    background-color: var(--grey-color);
-    color: var(--white-color);
+    color: var(--grey-color);
     height: 100px;
     font-size: 24px;
 }
 
 .copyright a{
-    color: var(--white-color);
+    color: var(--grey-color);
 }
 
 .copyright--icon{
-    color: var(--yellow-color);
+    color: var(--grey-color);
 }
 
 .social--icons a i{
@@ -768,4 +767,42 @@ body{font-family: var(--body-font);
     .card--image img{
         margin-top: 10px;
     }
+}
+
+
+/* PAGE projets */
+
+.projet--title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card--projet{
+    -webkit-box-shadow: 5px 5px 15px 5px #BBBBBB; 
+    box-shadow: 5px 5px 15px 5px #BBBBBB;
+}
+
+.card--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card--title h5{
+    font-weight: bold;
+}
+
+.card--title .card--link{
+    position: absolute;
+    bottom: 80px;
+    font-size: 35px;
+    text-decoration: none;
+    color: #E1B648;
+}
+
+.card--title .card--link:hover{
+    transition: ease-in-out 0.3s;
+    font-size: 40px;
+    color: #665E5E;
 }

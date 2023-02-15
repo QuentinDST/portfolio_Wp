@@ -1,5 +1,5 @@
 <?php get_header() ?>
 
-je suis index
+INDEX
     
 <?php get_footer() ?>

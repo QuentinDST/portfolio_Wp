@@ -5,11 +5,15 @@
 function portfolio_support_theme(){
 	add_theme_support('title-tag'); 
 	add_theme_support('post-thumbnails');
+  add_theme_support( 'post-thumbnails' );
 
-    // Ajout le sous menu menu dans apparence
-    add_theme_support('menus');
-    register_nav_menu( 'header', 'Menu du header');
-    register_nav_menu( 'footer', 'Menu du footer');
+  // Définir la taille des images mises en avant  
+  set_post_thumbnail_size( 700, 300, true );
+
+  // Ajout le sous menu menu dans apparence
+  add_theme_support('menus');
+  register_nav_menu( 'header', 'Menu du header');
+  register_nav_menu( 'footer', 'Menu du footer');
 
 }
 add_action('after_setup_theme', 'portfolio_support_theme');
@@ -18,6 +22,7 @@ add_action('after_setup_theme', 'portfolio_support_theme');
 
 function portfolio_style_bootstrap() {
 	wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+	wp_enqueue_style( 'icons bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
 	wp_enqueue_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js');
 }
 add_action('wp_enqueue_scripts', 'portfolio_style_bootstrap');
@@ -126,7 +131,7 @@ function get_backend_skills(){
 
 function projet_register_post_types() {
 	$labels = array(
-        'name' => 'Projet',
+        'name' => 'projet',
         'all_items' => 'Tous les projets',
         'singular_name' => 'Projet',
         'add_new_item' => 'Ajouter un projet',
@@ -150,3 +155,11 @@ function projet_register_post_types() {
 	register_post_type( 'projet', $args );
 }
 add_action( 'init', 'projet_register_post_types' );
+
+// Short code bouton page réalisation
+
+function ajouter_bouton_plus(){
+  echo 'bouton';
+}
+
+add_shortcode('shortCodeMore', 'ajouter_bouton_plus');

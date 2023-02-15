@@ -31,7 +31,7 @@
             <!-- Ajout d'un nav-link accueuil sur toutes les autres pages que front-page.php -->
             <?php if ( ! is_front_page() ) : ?>
               <div class="navbar-nav items">
-                <a class="nav-link" aria-current="page" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+                <a class="nav-link" aria-current="page" href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="bi bi-house-door"></i></a>
               </div>
             <?php endif; ?>
           <!-- <div class="navbar-nav items">
