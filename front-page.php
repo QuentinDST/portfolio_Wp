@@ -5,7 +5,7 @@
 <div class="row d-flex flex-column card--project">
         <div class="col-md-3 card--project1">
           <div class="card--image">
-            <a href="https://flowershenry.netlify.app" target="_blank"><img src="http://localhost/Brief7/wordpress/wp-content/uploads/2023/02/flowers.png" alt=""></a>
+            <a href="" alt=""></a>
           </div>
         </div>
         <div class="col-md-3 card--project2">
@@ -93,7 +93,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6 formation">
-          <div class="formation--title">
+          <div class="formation--title" id="formation">
             <h2><span class="first-letter">F</span>ORMATION</h2>
           </div>
 

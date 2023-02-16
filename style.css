@@ -772,15 +772,34 @@ body{font-family: var(--body-font);
 
 /* PAGE projets */
 
+
+
 .projet--title{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     text-align: center;
+    font-size: 40px;
+    font-family: var(--title-font);
+    transition: all 1s ease;
+}
+
+.projet--title:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 7px rgba(206,89,55,0.23);
+    letter-spacing: 5px;
 }
 
 .card--projet{
     -webkit-box-shadow: 5px 5px 15px 5px #BBBBBB; 
     box-shadow: 5px 5px 15px 5px #BBBBBB;
+    margin-bottom: 80px;
+    transition: ease-in-out 20s;
+}
+
+.card--projet:hover{
+    position: relative;
+    left: 20px;
+    cursor: pointer;
 }
 
 .card--title{

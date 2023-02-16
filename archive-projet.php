@@ -18,7 +18,7 @@
     while ( $query->have_posts() ) : $query->the_post(); ?>
     
 
-    <div class="row g-0 mb-5 bg-body-secondary position-relative card--projet">
+    <div class="row g-0 bg-body-secondary position-relative card--projet">
       <div class="col-md-6 mb-md-0 p-md-4 card--thumbnail">
         <?php the_post_thumbnail(); ?>
       </div>
